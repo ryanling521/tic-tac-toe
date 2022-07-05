@@ -13,6 +13,25 @@
         Welcome to the Tic-Tac-Toe game!
     </h1>
 
+    <form id="form" action="results.html" method="GET" enctype="multipart/form-data">
+        <div class="form-group"> 
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="X">X</label>
+            <input type="radio" name="XO" id="X" value="X" required>
+        </div>
+        <div class="form-group">
+            <label for="O">O</label>
+            <input type="radio" name="XO" id="O" value="O" required>
+        </div>
+
+        <button type="button" id="btn">Create Player</button>
+    </form>
+
+    <div class="container"></div>
+
     <div id="board">
         <div id="cell-1" class="cell">
             <!-- <img class="x-icon" src="x.svg" alt="x icon" width="100"> -->
@@ -23,13 +42,14 @@
         <div id="cell-3" class="cell">
             <!-- <img class="o-icon" src="o2.svg" alt="o icon" width="64"> -->
         </div>
-        <div id="cell-4" class="cell">4</div>
-        <div id="cell-5" class="cell">5</div>
-        <div id="cell-6" class="cell">6</div>
-        <div id="cell-7" class="cell">7</div>
-        <div id="cell-8" class="cell">8</div>
-        <div id="cell-9" class="cell">9</div>
+        <div id="cell-4" class="cell"></div>
+        <div id="cell-5" class="cell"></div>
+        <div id="cell-6" class="cell"></div>
+        <div id="cell-7" class="cell"></div>
+        <div id="cell-8" class="cell"></div>
+        <div id="cell-9" class="cell"></div>
     </div>
+
 
 </body>
 </html>
